@@ -3,17 +3,17 @@
 <h2>Função de 2° grau</h2>
 <p>
        Opções: 
--> Calcular raízes
--> Calcular função
--> Calcular vértice
--> Gerar gráfico
+<br>-> Calcular raízes
+<br>-> Calcular função
+<br>-> Calcular vértice
+<br>-> Gerar gráfico
 </p>
 
 <h2>Função exponencial</h2>
 <p>
--> Verificar se é crescente ou decrescente
--> Calcular função
--> Gerar gráfico
+<br>-> Verificar se é crescente ou decrescente
+<br>-> Calcular função
+<br>-> Gerar gráfico
 </p>
 
 <h2>Função logarítmica</h2>
