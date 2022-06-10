@@ -105,10 +105,16 @@ elif opcao == 3:
         if opcaomat == 1:
             if numLinhas == numColunas:
                 print('É uma matriz quadrada')
-                soma_dprincipal = matrizfeita[0][0] * matrizfeita[1][1] * matrizfeita[2][2] + \
-                  matrizfeita[0][1] * matrizfeita[1][2] * matrizfeita[2][0] + \
-                  matrizfeita[0][2] * matrizfeita[1][0] * matrizfeita[2][1]
-                continuarmat = continuar()
+                if numLinhas == 3 and numColunas == 3:
+
+                    soma_dprincipal = matrizfeita[0][0] * matrizfeita[1][1] * matrizfeita[2][2] + \
+                    matrizfeita[0][1] * matrizfeita[1][2] * matrizfeita[2][0] + \
+                    matrizfeita[0][2] * matrizfeita[1][0] * matrizfeita[2][1]
+
+                    SomaDiagSecun = matrizfeita[2][0] * matrizfeita[1][1] * matrizfeita[0][2] + \
+                    matrizfeita[2][1] * matrizfeita[1][2] * matrizfeita[0][0] + \
+                    matrizfeita[2][2] * matrizfeita[1][0] * matrizfeita[0][1] 
+                    continuarmat = continuar()
 
 
 
