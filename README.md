@@ -15,5 +15,9 @@
 <br>-> Gerar gráfico
 </p>
 
-<h2>Função logarítmica</h2>
 <h2>Matriz</h2>
+<p>
+  <br>-> Calcular determinante
+  <br>-> Multiplicação de matrizes
+  <br>-> Matriz transposta
+</p>
