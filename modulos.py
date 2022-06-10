@@ -17,7 +17,13 @@ def escreva(texto):
 
 def funcao2grau(a,b,c,tipo,x=0):
 
-    delta = (b**2) - (4 * a * c)            #Encontra as raízes
+    delta = (b**2) - (4 * a * c)
+    if delta < 0:
+        delta *= -1
+        raiz1 = (f'{(-b/(2*a))} + {sqrt(delta):.2f}i')
+        raiz2 = (f'{(-b/(2*a))} - {sqrt(delta):.2f}i')
+        return (f'\nAs raízes são: x1 = {raiz1} e x2= {raiz2}')
+
     raiz1 = (-b + sqrt(delta)) / (2 * a)
     raiz2 = (-b - sqrt(delta)) / (2 * a)
 
@@ -38,4 +44,19 @@ def continuar():
     if resposta in 'n':
         print('Encerrando programa, volte sempre!')
         resposta = 'n'
+    return resposta
+
+def funcaoexp(a,b,tipo,x=0):
+    if tipo == 1:
+        if a < 0:
+            resposta = 'A função não existe'
+        elif a>0 and a<1:
+            resposta = 'A função é decrescente'
+        elif a>1:
+            resposta = 'A função é crescente'
+    
+    elif tipo == 2:
+        funcao_y = a * (b**x)
+        resposta = f'O valor da função é {funcao_y}'
+
     return resposta
