@@ -2,7 +2,6 @@
 
 <h2>Função de 2° grau</h2>
 <p>
-       Opções: 
 <br>-> Calcular raízes
 <br>-> Calcular função
 <br>-> Calcular vértice

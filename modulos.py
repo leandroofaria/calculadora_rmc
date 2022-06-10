@@ -4,9 +4,8 @@ def menu():
     escolha = int(input('''Escolha uma opção: 
 \033[1;36m(1) -> Função 2° grau\033[m
 \033[1;35m(2) -> Função exponencial\033[m
-\033[1;34m(3) -> Função logarítmica\033[m
-\033[1;32m(4) -> Matriz\033[m
-\033[1;31m(5) -> Sair\033[m
+\033[1;32m(3) -> Matriz\033[m
+\033[1;31m(4) -> Sair\033[m
 Opção: '''))
     return escolha
 
@@ -48,11 +47,11 @@ def continuar():
 
 def funcaoexp(a,b,tipo,x=0):
     if tipo == 1:
-        if a < 0:
+        if b < 0:
             resposta = 'A função não existe'
-        elif a>0 and a<1:
+        elif b>0 and a<1:
             resposta = 'A função é decrescente'
-        elif a>1:
+        elif b>1:
             resposta = 'A função é crescente'
     
     elif tipo == 2:
@@ -60,3 +59,18 @@ def funcaoexp(a,b,tipo,x=0):
         resposta = f'O valor da função é {funcao_y}'
 
     return resposta
+
+def criar_matriz(linhas, colunas):
+    matriz = [0] * linhas
+    for linha in range(linhas):
+        matriz[linha] = [0] * colunas
+
+    for linha in range(linhas):
+        for coluna in range(colunas):
+            matriz[linha][coluna] = int(input(f'Insira o número para a posição [{linha}][{coluna}] da matriz: '))
+
+    for linha in range(linhas):
+        for coluna in range(colunas):
+            print(f'[{matriz[linha][coluna]}]', end= '')
+        print()
+    return matriz

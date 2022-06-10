@@ -1,4 +1,4 @@
-from modulos import escreva, funcao2grau, continuar, funcaoexp, menu
+from modulos import criar_matriz, escreva, funcao2grau, continuar, funcaoexp, menu, criar_matriz
 
 escreva('\033[1;33mBEM VINDO À CALCULADORA DE FUNÇÕES\033[m')
 
@@ -85,4 +85,33 @@ elif opcao == 2:
             menu()
 
 elif opcao == 3:
-    pass
+    escreva('\033[1;34mVOCÊ ESCOLHEU MATRIZ\033[m')
+
+    numLinhas = int(input('Número de linhas da matriz: '))
+    numColunas = int(input('Número de colunas da matriz: '))
+
+    matrizfeita = criar_matriz(numLinhas, numColunas)
+
+    continuarmat = 's'
+    while continuarmat in 's':
+        opcaomat = int(input('''\nEscolha uma opção:
+        \033[1;36m(1)\033[m -> Determinante
+        \033[1;35m(2)\033[m -> Multiplicação de matrizes
+        \033[1;34m(3)\033[m -> Matriz transposta
+        \033[1;33m(4)\033[m -> Todos
+        \033[1;31m(5)\033[m -> Voltar
+        Opção: '''))
+
+        if opcaomat == 1:
+            if numLinhas == numColunas:
+                print('É uma matriz quadrada')
+                soma_dprincipal = matrizfeita[0][0] * matrizfeita[1][1] * matrizfeita[2][2] + \
+                  matrizfeita[0][1] * matrizfeita[1][2] * matrizfeita[2][0] + \
+                  matrizfeita[0][2] * matrizfeita[1][0] * matrizfeita[2][1]
+                continuarmat = continuar()
+
+
+
+
+
+
