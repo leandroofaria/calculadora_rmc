@@ -1,3 +1,4 @@
+<div align=center>
 <h1>Calculadora de funções no terminal!</h1>
 
 <h2>Função de 2° grau</h2>
@@ -21,3 +22,4 @@
   <br>-> Multiplicação de matrizes
   <br>-> Matriz transposta
 </p>
+</div>
