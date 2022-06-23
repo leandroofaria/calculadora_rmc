@@ -1,5 +1,13 @@
 from math import sqrt
 
+import numpy as np
+
+
+
+
+
+
+
 def menu():
     escolha = int(input('''Escolha uma opção: 
 \033[1;36m(1) -> Função 2° grau\033[m
@@ -74,3 +82,11 @@ def criar_matriz(linhas, colunas):
             print(f'[{matriz[linha][coluna]}]', end= '')
         print()
     return matriz
+
+def multiplicar_matriz(matriz1, matriz2):
+    resultado = np.dot(matriz1, matriz2)
+    return resultado
+
+def matriz_transposta(matriz):
+    transposta = np.transpose(matriz)
+    return transposta
